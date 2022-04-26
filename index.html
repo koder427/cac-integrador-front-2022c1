@@ -22,7 +22,7 @@
 </head>
 
 <body>
-
+    
     <nav class="navbar navbar-expand-md bg-dark navbar-dark ">
 
         <div class="container-fluid">
@@ -139,23 +139,27 @@
         </div>
 
     </div>
-    
 
 
-    <div class="container-fluid" >
+
+    <div class="container-fluid">
 
         <div class="row">
             <div class="col-md-6 p-0">
-                <img src="img/honolulu.jpg" alt="honolulu" class="img-fluid" style="background-size: contain; height: 100%; ">
+                <img src="img/honolulu.jpg" alt="honolulu" class="img-fluid"
+                    style="background-size: contain; height: 100%; ">
             </div>
 
             <div class="col-md-6 text-light bg-dark p-0 ">
                 <div class="m-3">
                     <h1 class="negrita"> Bs As - Octubre </h1>
-                    <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos.
+                    <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados
+                        Unidos.
                         Honolulu es la mas sureña de entre las principales ciudades estadounidenses. Aunque el nombre
-                        Honolulu se refiere al Área urbana en la costa sureste de la isla Oahu, la ciudad y el condado de
-                        Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente unos
+                        Honolulu se refiere al Área urbana en la costa sureste de la isla Oahu, la ciudad y el condado
+                        de
+                        Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente
+                        unos
                         600 km&sup2 de superficie)
                     </p>
                 </div>
@@ -164,38 +168,47 @@
         </div>
 
     </div>
-    
+
     <div class="text-uppercase p-3" style="text-align: center;">
-        <p>Conviertete en un</p>
+        <p>Conviértete en un</p>
         <h1>Orador</h1>
     </div>
 
 
-
-
-
-    <div class="container">
+    <div class="container" style="text-align: center;">
+        <p>Anótate como orador para dar una charla ignite. Cuéntame de que quires hablar!</p>
 
         <form action="/action_page.php">
-            <div class="mb-3 mt-3">
-                <label for="email" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="email" name="email">
-                <p class="text-muted">Nunca comparta su email.</p>
+
+            <div class="row justify-content-center">
+
+                <div class="align-self-center col-3 ">
+
+                    <input type="nombre" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+                </div>
+                <div class="align-self-center col-3">
+                    <input type="apellido" class="form-control" id="apellido" name="apellido" placeholder="Apellido">
+                </div>
+
+
             </div>
-            <div class="mb-3">
-                <label for="pwd" class="form-label">Contraseña:</label>
-                <input type="Contraseña" class="form-control" id="pwd" name="pswd">
+
+            <div class="row justify-content-center mt-3">
+                <div class="align-self-center col-6">
+                    <textarea class="form-control" id="descripcion" rows="3"
+                        placeholder="Sobre qué quieres hablar?"></textarea>
+                    <p class="text-secondary">Recuerda incluir un título para tu charla</p>
+                </div>
             </div>
-            <div class="form-check mb-3">
-                <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox" name="Verificar"> Verificar
-                </label>
+
+            <div class="row justify-content-center mt-3 ">
+                <div class="d-grid col-6 ">
+                    <button class="btn btn-success" type="button">Enviar</button>
+                </div>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+
         </form>
     </div>
-
-
 
 </body>
 
